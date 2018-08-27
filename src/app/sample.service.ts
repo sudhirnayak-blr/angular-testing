@@ -8,7 +8,7 @@ export class SampleService {
   numbers: string[]; 
   isLoggedIn = true; 
   user = { name: "Test User" };
-  
+
   constructor() { 
     this.numbers = []; 
   }
@@ -21,6 +21,10 @@ export class SampleService {
   }
   remove(word: string) {
     this.numbers.splice(this.numbers.indexOf(word), 1);  
+  }
+  
+  getDetails(value) {
+    return value;
   }
 
 }
